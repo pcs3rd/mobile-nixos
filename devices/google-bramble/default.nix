@@ -22,7 +22,7 @@
   #mobile.device.firmware = pkgs.callPackage ./firmware {};
   #mobile.device.enableFirmware = false;
 
-  mobile.system.android.device_name = "marlin";
+  mobile.system.android.device_name = "bramble";
   mobile.system.android = {
     # This device has an A/B partition scheme
     ab_partitions = true;
@@ -40,7 +40,7 @@
   mobile.system.vendor.partition = "/dev/disk/by-partlabel/vendor_a";
 
   # For use with the "Nexus-style" UART cable, add the following kernel parameter.
-  mobile.boot.serialConsole = "ttyHSL0,115200n8";
+  #mobile.boot.serialConsole = "ttyHSL0,115200n8";
 
   mobile.usb.mode = "android_usb";
   # Google
