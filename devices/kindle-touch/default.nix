@@ -12,7 +12,7 @@
   };
 
   mobile.hardware = {
-    soc = "freescale-MX508";
+    soc = "freescale-mx508";
     eink = true; 
     ram = 256;
     screen = {
