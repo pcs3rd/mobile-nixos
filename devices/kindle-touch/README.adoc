@@ -1,4 +1,4 @@
-= Pine64 PineTab
+= Amazon Kindle Touch (K5)
 include::_support/common.inc[]
 
 == Device-specific notes
