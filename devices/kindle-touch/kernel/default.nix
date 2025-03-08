@@ -10,7 +10,7 @@ mobile-nixos.kernel-builder {
   configfile = ./config.armel;
   src = fetchurl {
     url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.6.tar.xz";
-    hash = "";
+    hash = "sha256-3gBTy0E9QI8g/R1XiCGZUbikQD5drBsdkDIJCTis0Zk=";
   };
 
   #patches = [
