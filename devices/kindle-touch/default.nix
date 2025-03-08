@@ -11,7 +11,6 @@
     soc = "freescale-mx508";
     eink = {
       enableEinkTheme = true;
-      
     };
     ram = 256;
     screen = {

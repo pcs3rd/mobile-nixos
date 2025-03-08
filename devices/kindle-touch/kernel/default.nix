@@ -1,16 +1,16 @@
 {
   mobile-nixos
 , fetchFromGit
+, fetchgit
 , ...
 }:
 
 mobile-nixos.kernel-builder {
-  version = "6.12";
+  version = "6.13.6";
   configfile = ./config.armel;
-  src = fetchFromGit {
-    url = "https://git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git";
+  src = fetchurl {
+    url = "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.6.tar.xz";
     hash = "";
-
   };
 
   #patches = [
