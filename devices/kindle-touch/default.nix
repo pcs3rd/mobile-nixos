@@ -5,7 +5,7 @@
     ./sound.nix
   ];
 
-  mobile.device.name = "kindle-k5-touch";
+  mobile.device.name = "kindle-touch";
   mobile.device.identity = {
     name = "Kindle-K5-Touch";
     manufacturer = "Amazon";
