@@ -9,7 +9,10 @@
 
   mobile.hardware = {
     soc = "freescale-mx508";
-    eink = true; 
+    eink = {
+      enableEinkTheme = true;
+      
+    };
     ram = 256;
     screen = {
       width = 600; height = 800;
