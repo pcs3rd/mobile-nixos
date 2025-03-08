@@ -6,11 +6,10 @@ let
 in
 {
   options.mobile.hardware.socs = {
-    freescale-MX508.enable = mkOption {
+    hardware.socs.freescale-MX508.enable = mkOption {
       type = types.bool;
       default = false;
       description = "Enable when SOC is i.MX508";
-      internal = true;
     };
   };
 
