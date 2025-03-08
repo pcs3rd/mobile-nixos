@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 let
-  inherit (lib) mkMerge mkOption types;
+  inherit (lib) mkOption mkMerge mkIf types;
   cfg = config.mobile.hardware.socs;
 in
 {
@@ -26,13 +26,5 @@ in
         ];
       };
     }
-
-    #(mkIf anyFreescale {
-    #  mobile.kernel.structuredConfig = [
-    #    (helpers: with helpers; {
-    #      ARCH_MEDIATEK = lib.mkDefault yes;
-    #    })
-    #  ];
-    #})
   ];
 }
