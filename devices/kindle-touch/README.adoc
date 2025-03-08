@@ -1,0 +1,34 @@
+= Pine64 PineTab
+include::_support/common.inc[]
+
+== Device-specific notes
+
+This device has an E-Ink display, with driver/gpu integrated into the SOC.
+Be aware that this device is not AARCH64. The Nixpkg hydra cache probably won't have non-aarch64 builds.
+
+=== Building a full disk image
+
+This platform uses the `u-boot` system-type.
+
+```
+ $ nix-build --argstr device kindle-k5-touch-A outputs.disk-image
+ $ dd if=result of=/dev/mmcblkX bs=8M oflag=sync,direct status=progress
+```
+
+=== Building the boot partition
+
+Building the full disk image may require a native AArch64 system.
+
+The boot partition can be built, and then flashed on top of an existing Mobile
+NixOS boot partition.
+
+```
+ $ nix-build --argstr device pine64-pinetab -A build.boot-partition
+ $ dd if=result/mobile-nixos-boot.img of=/dev/mmcblkXp3 bs=8M oflag=sync,direct status=progress
+```
+
+=== Building U-Boot
+
+Mobile NixOS is not managing platform firmware builds anymore.
+
+U-Boot should already exist on the device. If a new build is needed, U-Boot can be built from [Amazon GPL releases](https://wiki.mobileread.com/wiki/Kindle_Touch_Hacking).
