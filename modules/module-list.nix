@@ -18,6 +18,7 @@
   ./hardware-exynos.nix
   ./hardware-generic.nix
   ./hardware-mediatek.nix
+  ./hardware-freescale.nix
   ./hardware-qualcomm.nix
   ./hardware-ram.nix
   ./hardware-rockchip.nix
