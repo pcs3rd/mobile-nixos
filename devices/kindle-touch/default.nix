@@ -1,13 +1,9 @@
 { config, lib, pkgs, ... }:
 
 {
- # imports = [
- #   ./sound.nix
- # ];
-
   mobile.device.name = "kindle-touch";
   mobile.device.identity = {
-    name = "Kindle-K5-Touch";
+    name = "kindle-touch";
     manufacturer = "Amazon";
   };
 
