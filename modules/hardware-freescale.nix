@@ -5,7 +5,7 @@ let
   cfg = config.mobile.hardware.socs;
 in
 {
-  options.mobile.hardware.socs = {
+  options.mobile = {
     hardware.socs.freescale-MX508.enable = mkOption {
       type = types.bool;
       default = false;
