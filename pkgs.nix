@@ -12,7 +12,6 @@ let
   ;
   channelInfo =
     builtins.match
-      # https://releases.nixos.org/nixos/unstable/nixos-25.05beta723344.d3c42f187194/nixexprs.tar.xz
       "https?://(.*)/([^/]+)/([^/]+)/([^/]+)/.*"
       nixpkgs.url
   ;
