@@ -56,7 +56,7 @@
   #  storage.internal = "/dev/disk/by-path/platform-1c11000.mmc";
   #};
 
-  mobile.device.firmware = pkgs.callPackage ./firmware {};
+  #mobile.device.firmware = pkgs.callPackage ./firmware {};
 
   # Supports rebooting into generation kernel through kexec.
   mobile.quirks.supportsStage-0 = true;
