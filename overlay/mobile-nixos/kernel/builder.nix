@@ -49,6 +49,7 @@
 
 # For menuconfig
 , ncurses
+, ncurses.dev
 , pkg-config
 , runtimeShell
 
