@@ -23,6 +23,6 @@ pkgs.mkShell {
     mkbootimg                 # Pack and unpack boot images
     binwalk                   # Search a binary image for embedded files
     ubootTools                # A couple useful utilities
-    ncurses                   # Needed to use menuconfig
+    ncurses.dev               # Needed to use menuconfig
   ];
 }
