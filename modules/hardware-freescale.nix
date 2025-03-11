@@ -18,12 +18,11 @@ in
       mobile = mkIf cfg.freescale-mx508.enable {
         system.system = "armv7l-linux";
         quirks.fb-refresher.enable = true;
-        #kernel.structuredConfig = [
-          #(helpers: with helpers; {
-          #  ARCH_MX5 = option yes;
-          #  ARCH_MX50 = option yes; 
-          #})
-        #];
+        kernel.structuredConfig = [
+          (helpers: with helpers; {
+            ARCH_MXC = option yes;
+          })
+        ];
       };
     }
   ];
