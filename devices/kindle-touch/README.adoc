@@ -11,7 +11,7 @@ Be aware that this device is not AARCH64. The Nixpkg hydra cache probably won't 
 This platform uses the `u-boot` system-type.
 
 ```
- $ nix-build --argstr device kindle-k5-touch-A outputs.disk-image
+ $ nix-build --argstr device kindle-touch -A outputs.disk-image
  $ dd if=result of=/dev/mmcblkX bs=8M oflag=sync,direct status=progress
 ```
 

@@ -21,6 +21,14 @@
   mobile.boot.stage-1 = {
     kernel.package = pkgs.callPackage ./kernel { };
   };
+  
+  mobile.kernel.structuredConfig = [
+    (helpers: with helpers; {
+      TOUCHSCREEN_ZFORCE = option yes;
+      INPUT = option yes;
+      INPUT_TOUCHSCREEN = option yes;
+    })
+  ];
 
   boot.kernelParams = [
     # These are pulled from firmware
