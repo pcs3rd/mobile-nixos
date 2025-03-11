@@ -15,6 +15,7 @@ let
   # Look-up table to translate from targetPlatform to U-Boot names.
   ubootPlatforms = {
     "aarch64-linux" = "arm64";
+    "armv7l-linux" = "arm";
   };
 
   bootcmd = pkgs.writeText "${deviceName}-boot.cmd" ''
