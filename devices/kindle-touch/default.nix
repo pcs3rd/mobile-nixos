@@ -27,6 +27,7 @@
       TOUCHSCREEN_ZFORCE = option yes;
       INPUT = option yes;
       INPUT_TOUCHSCREEN = option yes;
+      CGROUP_HUGETLB = option yes;
     })
   ];
 
