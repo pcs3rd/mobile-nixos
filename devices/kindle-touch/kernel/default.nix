@@ -24,5 +24,5 @@ mobile-nixos.kernel-builder {
   #  cp -v $buildRoot/arch/arm64/boot/dts/allwinner/sun50i-a64-pinetab.dtb $out/dtbs/allwinner/
   #'';
 
-  isCompressed = false;
-}
+  isCompressed = "gz";
+  }
