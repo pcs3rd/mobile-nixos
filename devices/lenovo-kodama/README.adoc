@@ -1,4 +1,4 @@
-= Lenovo Chromebook 10e
+= Lenovo Chromebook 10e 
 include::_support/common.inc[]
 
 == Device-specific notes
