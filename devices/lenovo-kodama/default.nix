@@ -21,7 +21,7 @@
   # Ensure orientation match with keyboard.
   services.udev.extraHwdb = lib.mkBefore ''
     sensor:modalias:platform:*
-      #ACCEL_MOUNT_MATRIX=0, 1, 0; -1, 0, 0; 0, 0, 1  
-      ACCEL_MOUNT_MATRIX=0, -1, 0; -1, 0, 0; 0, 0, 1
+      ACCEL_MOUNT_MATRIX=0, 1, 0; -1, 0, 0; 0, 0, 1  
+      #ACCEL_MOUNT_MATRIX=0, -1, 0; -1, 0, 0; 0, 0, 1
   '';
 }
