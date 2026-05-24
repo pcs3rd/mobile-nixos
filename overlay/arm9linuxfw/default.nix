@@ -17,11 +17,10 @@ stdenv.mkDerivation {
   version = "unstable-2024";
 
   src = fetchFromGitHub {
-    owner = "linux-3ds";
-    repo  = "arm9linuxfw";
-    rev   = "206978444c04c65d1fc9e5a841196f7bd1623926";
-    # Replace with real hash after first `nix-build` error:
-    hash  = lib.fakeHash;
+    "owner": "linux-3ds",
+    "repo": "arm9linuxfw",
+    "rev": "206978444c04c65d1fc9e5a841196f7bd1623926",
+    "hash": "sha256-4+rSQ4hY82JUivVZYwjocn3fPKQXO89o99hRWPqpsFk="
   };
 
   nativeBuildInputs = [ cross.buildPackages.gcc cross.buildPackages.binutils ];

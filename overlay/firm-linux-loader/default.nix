@@ -21,11 +21,10 @@ stdenv.mkDerivation {
   version = "unstable-2024";
 
   src = fetchFromGitHub {
-    owner = "linux-3ds";
-    repo  = "firm_linux_loader";
-    rev   = "ecb0f0d5a8d8aaafaf5edca279098b52ecfa71a0";
-    # Replace with real hash after first `nix-build` error:
-    hash  = lib.fakeHash;
+    "owner": "linux-3ds",
+    "repo": "firm_linux_loader",
+    "rev": "ecb0f0d5a8d8aaafaf5edca279098b52ecfa71a0",
+    "hash": "sha256-ONStwFJmRm3RJedvSKNMh8fcDvH+cO+l0ppaKa44S7Q="
   };
 
   nativeBuildInputs = [ cross.buildPackages.gcc cross.buildPackages.binutils ];

@@ -11,11 +11,10 @@ python3.pkgs.buildPythonApplication {
   pyproject = true;
 
   src = fetchFromGitHub {
-    owner = "TuxSH";
-    repo  = "firmtool";
-    rev   = "fdc7085c2394d87ce5dbdfecdf51423e1e7b00a1";
-    # Replace with real hash after first `nix-build` error:
-    hash  = "sha256-7fvMeHbbk0EIutLiZt+zU8ZNBgrX6WRq66NI0yDgRV0=";
+    "owner": "TuxSH",
+    "repo": "firmtool",
+    "rev": "fdc7085c2394d87ce5dbdfecdf51423e1e7b00a1",
+    "hash": "sha256-7fvMeHbbkOEIutLiZt+zU8ZNBgrX6WRq66NIOyDgRV0="
   };
 
   build-system = [ python3.pkgs.setuptools ];
