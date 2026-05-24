@@ -15,6 +15,7 @@ in
   imports = [
     ./system-types/depthcharge
     ./system-types/android
+    ./system-types/nintendo-firm
     ./system-types/u-boot
     ./system-types/uefi
   ];

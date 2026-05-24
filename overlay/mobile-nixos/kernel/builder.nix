@@ -40,7 +40,7 @@
 , lz4
 
 , cpio
-, elfutils
+, elfutils ? null
 , libelf
 , util-linux
 
@@ -223,7 +223,7 @@ stdenv.mkDerivation (inputArgs // {
     ++ optionals (lib.versionAtLeast version "4.16") [ bison flex ]
     ++ optionals (lib.versionAtLeast version "4.16") [ bison flex ]
     ++ optional  (lib.versionAtLeast version "5.2")  cpio
-    ++ optional  (lib.versionAtLeast version "5.8")  elfutils
+    ++ optional  (lib.versionAtLeast version "5.8" && stdenv.buildPlatform.isLinux && elfutils != null)  elfutils
     ++ optional  (isCompressed == "lz4") lz4
     # Mobile NixOS inputs.
     # While some kernels might not need those, most will.

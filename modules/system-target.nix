@@ -55,6 +55,7 @@ in
       # Known supported target types.
       type = types.enum [
         "aarch64-linux"
+        "armv6l-linux"
         "armv7l-linux"
         "x86_64-linux"
       ];

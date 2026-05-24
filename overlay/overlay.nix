@@ -8,6 +8,9 @@ in
     # Keep sorted.
     adbd = callPackage ./adbd { };
     android-headers = callPackage ./android-headers { };
+    arm9linuxfw = callPackage ./arm9linuxfw { };
+    firm-linux-loader = callPackage ./firm-linux-loader { };
+    firmtool = callPackage ./firmtool { };
     dtbTool = callPackage ./dtbtool { };
     dtbTool-exynos = callPackage ./dtbtool-exynos { };
     libhybris = callPackage ./libhybris { };
