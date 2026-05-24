@@ -15,7 +15,7 @@ python3.pkgs.buildPythonApplication {
     repo  = "firmtool";
     rev   = "fdc7085c2394d87ce5dbdfecdf51423e1e7b00a1";
     # Replace with real hash after first `nix-build` error:
-    hash  = lib.fakeHash;
+    hash  = "sha256-7fvMeHbbk0EIutLiZt+zU8ZNBgrX6WRq66NI0yDgRV0=";
   };
 
   build-system = [ python3.pkgs.setuptools ];
